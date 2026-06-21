@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: creator-card-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node bootstrap.js
+    healthCheckPath: /
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        sync: false
