@@ -1,7 +1,12 @@
 # Creator Card Microservice API
 
+**Live base URL:** https://creator-card-api-p2md.onrender.com
+
 A REST microservice that lets creators publish a shareable profile card showcasing
 their links and service rates ("link-in-bio" cards with rate cards attached).
+
+> Hosted on Render's free tier, which sleeps after ~15 min idle — the first request
+> after inactivity may take ~30–60s to wake.
 
 Built on the provided R17 Node.js scaffold, following its conventions exactly:
 `endpoints → services → repository → models`, VSL field validation, and the
